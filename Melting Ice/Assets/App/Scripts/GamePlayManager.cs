@@ -38,6 +38,7 @@ public class GamePlayManager : MonoBehaviour
 
 
     [SerializeField] private TextMeshProUGUI scoreText;
+
     #region Gameplay Features
     private void Awake()
     {

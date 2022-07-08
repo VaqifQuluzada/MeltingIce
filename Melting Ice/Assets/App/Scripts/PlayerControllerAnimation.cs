@@ -18,8 +18,9 @@ public class PlayerControllerAnimation : MonoBehaviour
 
     SwipeDirection currentDirection = SwipeDirection.MID;
 
-    
 
+   //[SerializeField] private AnimationMultiDim[] playerAnimations;
+    
     [SerializeField] private AnimationClip[] midToLeftClips;
 
     [SerializeField] private AnimationClip[] midToRightClips;
@@ -33,6 +34,7 @@ public class PlayerControllerAnimation : MonoBehaviour
     [SerializeField] private AnimationClip[] midJumps;
 
     [SerializeField] private AnimationClip[] rightJumps;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -191,4 +193,14 @@ public class PlayerControllerAnimation : MonoBehaviour
     //    swiping = false;
     //    StopAllCoroutines();
     //}
+
+
+
+
+}
+
+[System.Serializable]
+public class AnimationMultiDim
+{
+	 public AnimationClip[] animations;
 }
