@@ -2175,7 +2175,14 @@ AnimationClip:
   - time: 0
     functionName: PlayMovementSFX
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 89b05b5e8b42e914ca3b37b7479ccc87, type: 3}
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6666667
+    functionName: ResetSwiping
+    data: 
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

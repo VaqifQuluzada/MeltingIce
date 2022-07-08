@@ -32,11 +32,11 @@ public class PlayerDetector : MonoBehaviour
         
         if (other.gameObject.layer == LayerMask.NameToLayer("Obstacle"))
         {
-            //transform.DOPunchScale((transform.localScale / 2), 0.5f, 1).OnComplete(() => transform.localScale = transform.localScale / 2);
-            obstacleSound.Stop();
+            //transform.DOPunchScale((transform.localScale / 2), 0.5f, 5).OnComplete(() => transform.localScale = transform.localScale / 2);
+            
+         obstacleSound.Stop();
 
             obstacleSound.Play();
-
 
             transform.DOScale(transform.localScale / 2, 0.5f);
 

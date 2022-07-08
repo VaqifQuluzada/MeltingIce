@@ -809,10 +809,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b53b31c62e2604baab84d9b1fa1881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpPower: 100
   playerAnimation: {fileID: 307356225}
   playerMovementSFXSource: {fileID: 307356227}
+  playerAnimations:
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   midToLeftClips:
   - {fileID: 7400000, guid: 440e90b2fc3b58144b9942c2734e131a, type: 2}
   - {fileID: 7400000, guid: 910c12b4e4432614bb9417001a61359d, type: 2}
@@ -851,7 +876,7 @@ Transform:
   - {fileID: 1009426486}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.546667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!111 &307356225
 Animation:
   m_ObjectHideFlags: 0
@@ -2109,7 +2134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &654077343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7286,7 +7311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &834504831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8681,11 +8706,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenType: 4
-  speedMultiplier: 1
+  timeMultiplayer: 0
   maxPoolSize: 50
   maxSpawnedCoinCount: 5
-  coinImage: {fileID: 7208820073594295330, guid: a7e9e563dc1f5ba4c8d4e63fbcbac13e, type: 3}
-  coinPrefab: {fileID: 7208820073594295328, guid: a7e9e563dc1f5ba4c8d4e63fbcbac13e, type: 3}
+  coinPrefab: {fileID: 4738985541681759156, guid: a0133c9719966bc41bf8eadaf789c27b, type: 3}
   coinImageParent: {fileID: 834504831}
   coinTargetPoint: {fileID: 7208820073096955707}
 --- !u!1 &1800189079

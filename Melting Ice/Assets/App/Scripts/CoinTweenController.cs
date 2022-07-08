@@ -7,15 +7,13 @@ public class CoinTweenController : MonoBehaviour
 {
    [SerializeField] private Ease tweenType = Ease.InBounce;
    [Range(0f, 1f)]
-   [SerializeField] private float speedMultiplier;
+   [SerializeField] private float timeMultiplayer;
 
    [Range(0, 50)]
    [SerializeField] int maxPoolSize = 5;
 
    [Range(0, 10)]
    [SerializeField] int maxSpawnedCoinCount = 5;
-
-   [SerializeField] Image coinImage;
 
    [SerializeField] private GameObject coinPrefab;
 
@@ -49,7 +47,8 @@ public class CoinTweenController : MonoBehaviour
 			{
          return;
 			}
-      for (int i = 0; i < maxSpawnedCoinCount; i++)
+
+      for (int i = 1; i <= maxSpawnedCoinCount; i++)
       {
          GameObject coinInstance =coinPool.Dequeue();
 
@@ -57,7 +56,7 @@ public class CoinTweenController : MonoBehaviour
 
          coinInstance.transform.position = collectibleScreenPoint;
 
-         coinInstance.transform.DOMove(coinTargetPoint.position, i * speedMultiplier).
+         coinInstance.transform.DOMove(coinTargetPoint.position, i * timeMultiplayer).
             SetEase(tweenType).
             OnComplete(
             () => OnCoinReachedTarget(coinInstance)

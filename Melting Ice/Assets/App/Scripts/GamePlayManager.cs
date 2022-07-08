@@ -39,9 +39,14 @@ public class GamePlayManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
 
+
     #region Gameplay Features
     private void Awake()
     {
+      if(instance!=null && instance != this)
+			{
+         Destroy(instance.gameObject);
+			}
         instance = this;
     }
 
@@ -59,7 +64,8 @@ public class GamePlayManager : MonoBehaviour
             //if we already have a tile in array we need to set remaining tiles to the end of this tiles.
             if (tileArray.Count > 0)
             {
-                tileInstance.transform.position = tileArray[tileArray.Count - 1].GetComponent<TileController>().endPoint.position;
+                tileInstance.transform.position = tileArray[tileArray.Count - 1].
+               GetComponent<TileController>().endPoint.position;
                 tileInstance.transform.parent = tileArray[0].transform;
             }
             else
@@ -155,6 +161,7 @@ public class GamePlayManager : MonoBehaviour
     {
         return currentCoinCount;
     }
+
     public void onGameOver()
     {
         Time.timeScale = 0;

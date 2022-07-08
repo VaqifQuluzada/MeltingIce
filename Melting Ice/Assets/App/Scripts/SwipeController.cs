@@ -87,7 +87,7 @@ public class SwipeController : MonoBehaviour
             }
 
 
-            if (fingerDown && Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0))
             {
                 fingerDown = false;
             }

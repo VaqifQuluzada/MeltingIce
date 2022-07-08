@@ -124,4 +124,4 @@ public class PlayerController : MonoBehaviour
     }
 }
 
-public enum SwipeDirection {LEFT,RIGHT,UP,MID};
+public enum SwipeDirection { MID,LEFT, RIGHT,UP};
