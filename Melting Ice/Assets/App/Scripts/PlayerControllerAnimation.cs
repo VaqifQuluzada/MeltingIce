@@ -35,6 +35,8 @@ public class PlayerControllerAnimation : MonoBehaviour
 
    [SerializeField] private AnimationClip[] rightJumps;
 
+   [SerializeField] private AnimationMultiDim[] animationClipArray;
+
    private void Awake()
    {
       if (instance != null && instance != this)

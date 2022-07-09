@@ -859,6 +859,19 @@ MonoBehaviour:
   rightJumps:
   - {fileID: 7400000, guid: eb210b41dcc67bd42b45ab547e98005c, type: 2}
   - {fileID: 7400000, guid: f95b6c2e3c1318b419a9f9d7ba181382, type: 2}
+  animationClipArray:
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - animations:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
 --- !u!4 &307356224
 Transform:
   m_ObjectHideFlags: 0
@@ -2134,7 +2147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &654077343
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7311,7 +7324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &834504831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8706,7 +8719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenType: 4
-  timeMultiplayer: 0
+  timeMultiplayer: 1
   maxPoolSize: 50
   maxSpawnedCoinCount: 5
   coinPrefab: {fileID: 4738985541681759156, guid: a0133c9719966bc41bf8eadaf789c27b, type: 3}

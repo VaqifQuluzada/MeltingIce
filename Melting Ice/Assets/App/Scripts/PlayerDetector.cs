@@ -7,8 +7,6 @@ public class PlayerDetector : MonoBehaviour
 {
     [SerializeField] private TailFollowPlayer particleTailController;
 
-
-
     #region Collision Sounds
     [SerializeField] private AudioSource coinSound;
 

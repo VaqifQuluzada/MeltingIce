@@ -100,7 +100,9 @@ public class GamePlayManager : MonoBehaviour
         temp.GetComponent<TileController>().CancelInvoke("MoveTile");
 
         //set the previous parent to the end of the last tile in array.
-        temp.transform.position = tileArray[tileArray.Count - 1].GetComponent<TileController>().endPoint.position;
+        temp.transform.position = tileArray[tileArray.Count - 1].
+         GetComponent<TileController>().
+         endPoint.position;
 
         //for the first 10 seconds there will be no obstacle(cooldown state for beginning)
         if (currentObstacleState != null)
